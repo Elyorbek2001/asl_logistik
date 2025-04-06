@@ -11,12 +11,12 @@ const Main = () => {
 
             {/* Text and Form Section */}
             <div className="text w-full lg:w-[50%] pl-0 lg:pl-20 xs:pt-5 sm:pt-5 flex flex-col items-center lg:items-start">
-                <h1 className='xs:text-[20px] xs:pb-5 sm:text-[25px] md:text-[30px] lg:text-[45px] xl:text-[49px] xl:font-medium text-center lg:text-left'>
+                <h1 className='xs:text-[25px] xs:pb-5 sm:text-[25px] md:text-[30px] lg:text-[45px] xl:text-[49px] xl:font-medium text-center lg:text-left'>
                     Надежная логистика для вашего бизнеса
                 </h1>
 
                 <div className="form w-full pt-5 pb-10 xs:pt-3 xs:pb-3 sm:pt-3 sm:pb-5 lg:pt-5 lg:pb-10">
-                    <h1 className='text-3xl xs:max-w-full whitespace-nowrap xs:text-[12px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
+                    <h1 className='text-3xl xs:max-w-full whitespace-nowrap xs:text-[18px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
                         Calculate your shipment
                     </h1>
                     <form action="" className="grid grid-cols-1 gap-4 pt-5 xs:pt-1 xs:gap-2 sm:pt-4 sm:gap-3 md:grid-cols-2 md:gap-4 xl:pt-10 xl:grid-cols-2 xl:gap-4">
@@ -26,7 +26,7 @@ const Main = () => {
                             <input
                                 id="from"
                                 type="text"
-                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[10px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
+                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
                                 placeholder="Enter origin"
                             />
                         </div>
@@ -37,7 +37,7 @@ const Main = () => {
                             <input
                                 id="to"
                                 type="text"
-                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[10px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
+                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
                                 placeholder="Destination"
                             />
                         </div>
@@ -48,7 +48,7 @@ const Main = () => {
                             <input
                                 id="cargo"
                                 type="text"
-                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[10px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full lg:text-[15px] xl:text-[18px]"
+                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full lg:text-[15px] xl:text-[18px]"
                                 placeholder="kg, volume"
                             />
                         </div>
@@ -59,7 +59,7 @@ const Main = () => {
                             <input
                                 id="name"
                                 type="text"
-                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[10px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
+                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
                                 placeholder="Enter your name"
                             />
                         </div>
@@ -70,14 +70,14 @@ const Main = () => {
                             <input
                                 id="phone"
                                 type="text"
-                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[10px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
+                                className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
                                 placeholder="Enter your phone"
                             />
                         </div>
                     </form>
 
                     <div className='pt-5 text-center xs:pt-3 xl:pt-10'>
-                        <button className='w-full bg-[#0563AB] px-40 py-3 text-white rounded-xl xs:px-0.5 xs:py-0.5 xs:text-[10px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:py-3'>
+                        <button className='w-full bg-[#0563AB] px-40 py-3 h-[35px] text-white rounded-xl xs:px-0.5 xs:py-0.5 xs:text-[14px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:py-3'>
                             Calculate
                         </button>
                     </div>
