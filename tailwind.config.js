@@ -4,6 +4,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      keyframes: {
+        scrollLeft: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'scroll-left': 'scrollLeft 20s linear infinite',
+      },
       fontSize: {
         '40px': '40px',  // Yangi o'lcham qo'shish
       },
@@ -14,6 +23,7 @@ export default {
         lg: '1024px', // lg breakpointdan katta ekranlar uchun
         xl: '1280px', // xl breakpointdan katta ekranlar uchun
       },
+
     },
   },
   plugins: [],
