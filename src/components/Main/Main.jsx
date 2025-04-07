@@ -77,7 +77,7 @@ const Main = () => {
                     </form>
 
                     <div className='pt-5 text-center xs:pt-3 xl:pt-10'>
-                        <button className='w-full bg-[#0563AB] px-40 py-3 h-[35px] text-white rounded-xl xs:px-0.5 xs:py-0.5 xs:text-[14px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:py-3'>
+                        <button className='w-full bg-[#0563AB] px-40 py-3 h-[35px] text-white rounded-xl xs:px-0.5 xs:py-0.5 xs:text-[14px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:h-[40px]'>
                             Calculate
                         </button>
                     </div>

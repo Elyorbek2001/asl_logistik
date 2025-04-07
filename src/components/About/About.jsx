@@ -7,7 +7,7 @@ import logo3 from "../../assets/main/logo3.png";
 
 const About = () => {
     return (
-        <div id="About" className="about flex flex-col items-center justify-center px-20 py-5 sm:px-8 xs:px-5 xs:py-5">
+        <div id="About" className="about flex flex-col items-center justify-center px-20 py-5 sm:px-8 xs:px-5 xs:py-5 md:mt-24">
             {/* Image with Text */}
             <div
                 className="relative w-full   bg-center bg-cover flex   "
@@ -23,32 +23,32 @@ const About = () => {
                                 <h1>Решение для потребностей вашего бизнеса</h1>
                             </div>
 
-                            <p className='text-[18px] sm:text-[18px] xl:text-[22px] xl:pl-[40px]'>Мы делаем логистическую доставку намного проще и понятнее. Сочетание хорошего сервиса и технологий делает все эффективным</p>
+                            <p className='text-[18px] sm:text-[18px] xl:text-[22px] xl:pl-[110px]'>Мы делаем логистическую доставку намного проще и понятнее. Сочетание хорошего сервиса и технологий делает все эффективным</p>
                         </div>
 
 
-                        <div className='pt-5 grid grid-row-3 gap-4 pb-10 sm:grid-cols-2 md:grid-cols-3'>
+                        <div className='pt-5 grid grid-row-3 gap-10 pb-10 sm:grid-cols-2 md:grid-cols-3'>
                             <div className='bg-white border rounded-[12px] p-2'>
                                 <div className='flex items-center gap-4 py-5 w-[90%]'>
                                     <img src={logo1} alt="" />
-                                    <p className='font-bold text-[20px] md:text-[14px]'>Малый и средний бизнес</p>
+                                    <p className='font-bold text-[20px] md:text-[14px] xl:text-[20px] xl:w-[50%]'>Малый и средний бизнес</p>
                                 </div>
-                                <p className='text-[15px]'>Оптимальные логистические решения для стартапов и компаний, развивающих свои направления.</p>
+                                <p className='text-[15px] xl:text-[17px] xl:pt-[8px]'>Оптимальные логистические решения для стартапов и компаний, развивающих свои направления.</p>
                             </div>
 
                             <div className='bg-white border rounded-[12px] p-2'>
                                 <div className='flex items-center gap-4 py-5 w-[90%]'>
                                     <img src={logo2} alt="" />
-                                    <p className='font-bold text-[20px] md:text-[14px]'>Крупные корпоративные клиенты</p>
+                                    <p className='font-bold text-[20px] md:text-[14px] xl:text-[20px] xl:w-[50%]'>Крупные корпоративные клиенты</p>
                                 </div>
-                                <p className='text-[15px]'>Полный цикл логистики, включая индивидуальные маршруты, консолидацию грузов и международные перевозки.</p>
+                                <p className='text-[15px] xl:text-[17px]'>Полный цикл логистики, включая индивидуальные маршруты, консолидацию грузов и международные перевозки.</p>
                             </div>
                             <div className='bg-white border rounded-[12px] p-2'>
                                 <div className='flex items-center gap-4 py-5 w-[90%]'>
                                     <img src={logo3} alt="" />
-                                    <p className='font-bold text-[20px] md:text-[14px]'>Частные клиенты</p>
+                                    <p className='font-bold text-[20px] md:text-[14px] xl:text-[20px] xl:w-[50%]'>Частные клиенты</p>
                                 </div>
-                                <p className='text-[15px]'>Надёжная доставка личных и коммерческих грузов с гарантией качества.</p>
+                                <p className='text-[15px] xl:text-[17px] xl:pt-[8px]'>Надёжная доставка личных и коммерческих грузов с гарантией качества.</p>
                             </div>
                         </div>
                         <div className='grid grid-row-3 gap-4 pb-2 pt-5 bg-[#EFF8FF] rounded-[12px] sm:grid-cols-2 md:grid-cols-3 px-2'>

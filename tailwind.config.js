@@ -4,6 +4,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
+      fontSize: {
+        '40px': '40px',  // Yangi o'lcham qo'shish
+      },
       screens: {
         xs: '370px', // 480px va kichik ekranlar uchun
         sm: '640px',  // sm breakpointdan katta ekranlar uchun
