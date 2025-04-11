@@ -1,16 +1,20 @@
 import React from 'react'
 
 
-import Contactimg from '../components/Contact/ContactImg/Contactimg'
+
+
+
 import ContactText from '../components/Contact/ContactText/Contacttext'
+import Contacti from '../components/Contact/Contacti/Contacti'
 
 
 const Contact = () => {
     return (
         <>
 
-            <Contactimg />
+            <Contacti />
             <ContactText />
+
         </>
     )
 }
