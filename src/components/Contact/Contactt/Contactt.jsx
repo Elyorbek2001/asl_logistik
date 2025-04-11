@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactText = () => {
+const Contactt = () => {
     return (
         <div className='ItemList flex flex-col px-20 py-5 sm:px-8 xs:px-5 xs:py-5 md:mt-10'>
             <h5 className='text-[#0563AB] text-[18px] font-bold sm:text-2xl'>О компании</h5>
@@ -15,8 +15,7 @@ const ContactText = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
-export default ContactText
+export default Contactt

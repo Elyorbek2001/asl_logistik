@@ -4,8 +4,9 @@ import React from 'react'
 
 
 
-import ContactText from '../components/Contact/ContactText/Contacttext'
+
 import Contacti from '../components/Contact/Contacti/Contacti'
+import Contactt from '../components/Contact/Contactt/Contactt'
 
 
 const Contact = () => {
@@ -13,7 +14,8 @@ const Contact = () => {
         <>
 
             <Contacti />
-            <ContactText />
+            <Contactt />
+
 
         </>
     )
