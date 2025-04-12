@@ -7,12 +7,12 @@ import twitter from "../../assets/twitter.png";
 
 const Footer = () => {
     return (
-        <div className='Footer bg-[#0563AB] flex flex-col  px-20 py-5 sm:px-8 xs:px-5 xs:py-5 '>
+        <div className='Footer bg-[#0563AB] flex flex-col sm:px-8 px-5 py-3 '>
             <div className='logo w-[250px] h-[130px] flex justify-center items-center'>
                 <img src={logo} alt="" />
             </div>
             <hr />
-            <div className='grid grid-cols-4 font-normal gap-10 pt-10 pb-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1'>
+            <div className='grid grid-cols-1 font-normal gap-10 pt-10 pb-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 '>
                 <div className='text-white'>
                     <h4 className='font-bold pt-8 pb-2' >ИНФОРМАЦИЯ</h4>
                     <ul>

@@ -17,7 +17,7 @@ export default {
         '40px': '40px',  // Yangi o'lcham qo'shish
       },
       screens: {
-        xs: '370px', // 480px va kichik ekranlar uchun
+
         sm: '640px',  // sm breakpointdan katta ekranlar uchun
         md: '768px',  // md breakpointdan katta ekranlar uchun
         lg: '1024px', // lg breakpointdan katta ekranlar uchun

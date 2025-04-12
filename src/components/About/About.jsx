@@ -7,15 +7,15 @@ import logo3 from "../../assets/main/logo3.png";
 
 const About = () => {
     return (
-        <div id="About" className="about flex flex-col items-center justify-center px-20 py-5 sm:px-8 xs:px-5 xs:py-5 md:mt-24">
+        <div id="About" className="about flex flex-col items-center justify-center py-3 px-5 sm:px-8 md:mt-5 ">
             {/* Image with Text */}
             <div
-                className="relative w-full   bg-center bg-cover flex   "
+                className="relative w-full bg-center bg-cover flex   "
                 style={{
                     backgroundImage: `url(${world})`,
                 }}
             >
-                <div className=' text-[12px] py-10 '>
+                <div className=' text-[12px] py-5 '>
                     <h5 className='text-[#0563AB] text-[18px] font-bold sm:text-2xl'>О компании</h5>
                     <div className=''>
                         <div className='md:grid md:grid-cols-2 gap-4 justify-between items-center'>

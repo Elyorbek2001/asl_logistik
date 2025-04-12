@@ -3,7 +3,7 @@ import fon from "../../assets/main/fon.2.png";
 
 const Main = () => {
     return (
-        <main className='main flex flex-col lg:flex-row px-20 py-10 xs:px-5 xs:py-3 sm:px-[33px] sm:py-5'>
+        <main className='main flex flex-col lg:flex-row  px-5 py-3 sm:px-[33px] sm:py-5'>
             {/* Image Section */}
             <div className="img w-full lg:w-[50%]">
                 <img src={fon} alt="" className='object-cover w-full rounded-xl' />
@@ -16,7 +16,7 @@ const Main = () => {
                 </h1>
 
                 <div className="form w-full pt-5 pb-10 xs:pt-3 xs:pb-3 sm:pt-3 sm:pb-5 lg:pt-5 lg:pb-10">
-                    <h1 className='text-3xl xs:max-w-full whitespace-nowrap xs:text-[18px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
+                    <h1 className='text-3xl max-w-full whitespace-nowrap text-[18px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
                         Calculate your shipment
                     </h1>
                     <form action="" className="grid grid-cols-1 gap-4 pt-5 xs:pt-1 xs:gap-2 sm:pt-4 sm:gap-3 md:grid-cols-2 md:gap-4 xl:pt-10 xl:grid-cols-2 xl:gap-4">
@@ -76,8 +76,8 @@ const Main = () => {
                         </div>
                     </form>
 
-                    <div className='pt-5 text-center xs:pt-3 xl:pt-10'>
-                        <button className='w-full bg-[#0563AB] px-40 py-3 h-[35px] text-white rounded-xl xs:px-0.5 xs:py-0.5 xs:text-[14px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:h-[40px]'>
+                    <div className='  pt-3 xl:pt-10'>
+                        <button className='w-full bg-[#0563AB]  py-2 text-white rounded-xl text-[15px] sm:px-1 sm:py-1 sm:text-[12px] md:px-2 md:py-2 md:text-[14px] lg:text-[16px] xl:px-40 xl:h-[40px]'>
                             Calculate
                         </button>
                     </div>

@@ -5,7 +5,7 @@ import img3 from "../../assets/s.img3.png";
 
 const Section = () => {
     return (
-        <div id='Section' className="section flex flex-col items-center justify-center px-20 py-5 sm:px-8 xs:px-5 xs:py-5 md:mt-24">
+        <div id='Section' className="section flex flex-col items-center justify-center sm:px-8 px-5 py-3 md:mt-12">
             <div className='text-[12px]'>
                 <h5 className='text-[#0563AB] text-[18px] font-bold sm:text-2xl'>Услуги</h5>
                 <div className=''>

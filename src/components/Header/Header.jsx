@@ -10,9 +10,9 @@ const Header = () => {
     };
 
     return (
-        <header className="header relative flex justify-between items-center px-20 py-5 sm:px-8 xs:px-5 xs:py-3">
+        <header className="header relative flex justify-between items-center  sm:px-8 px-5 py-3">
             <img
-                className='w-[300px] h-[100px] sm:w-[220px] sm:h-[80px] xs:w-[100px] xs:h-[40px]'
+                className='w-[120px] h-[50px] sm:w-[220px] sm:h-[80px] '
                 src={logo}
                 alt="Logo"
             />
