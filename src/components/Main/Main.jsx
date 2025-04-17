@@ -33,7 +33,7 @@ const Main = () => {
                 chat_id: chatId,
                 text: messageContent,
             }
-        }).then((res) => {
+        }).then(() => {
             alert("Сообщение отправлено");
             event.target.reset();  // Formani tozalash
         }).catch((error) => {
@@ -60,7 +60,7 @@ const Main = () => {
                     <h1 className='text-3xl max-w-full whitespace-nowrap text-[18px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
                         Calculate your shipment
                     </h1>
-                    <form id='myForm' onSubmit={SendMessage} className="grid grid-cols-1 gap-4 pt-5 xs:pt-1 xs:gap-2 sm:pt-4 sm:gap-3 md:grid-cols-2 md:gap-4 xl:pt-10 xl:grid-cols-2 xl:gap-4">
+                    <form id='myForm' onSubmit={SendMessage} className="grid grid-cols-1  pt-1 gap-2 sm:pt-4 sm:gap-3 md:grid-cols-2 md:gap-4 xl:pt-10 xl:grid-cols-2 xl:gap-4">
                         {/* From Field */}
                         <div className="flex flex-col">
                             <label htmlFor="from" className="text-sm font-semibold"></label>
