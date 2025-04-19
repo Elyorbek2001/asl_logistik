@@ -1,63 +1,110 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 
 const Contactt = () => {
+    const [loading, setLoading] = React.useState(false);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (loading) return;
+
+        setLoading(true);
+
+        const token = "7765338174:AAGIw8bMxVU62xeWYCUfsMhGMBCGW0Cklk8";
+        const chatId = "6563907367";
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+        const formData = new FormData(event.target);
+        const name = formData.get("name");
+        const country = formData.get("country");
+        const city = formData.get("city");
+        const email = formData.get("email");
+        const phone = formData.get("phone");
+        const idea = formData.get("idea");
+
+        const message = `Контактная форма:\n👤 Имя: ${name}\n🌍 Страна: ${country}\n🏙️ Город: ${city}\n📧 Email: ${email}\n📞 Телефон: ${phone}\n💡 Идея: ${idea}`;
+
+        axios.post(url, {
+            chat_id: chatId,
+            text: message,
+        }).then(() => {
+            alert("Сообщение отправлено!");
+            event.target.reset();
+        }).catch((err) => {
+            console.log("Ошибка отправки:", err);
+        }).finally(() => {
+            setLoading(false);
+        });
+    };
+
     return (
         <div className='ItemList flex flex-col sm:px-8 px-5 py-5 md:mt-10'>
             <h5 className='text-[#0563AB] text-[18px] font-bold sm:text-2xl'>Контакты</h5>
-            <div className='text-[12px]  '>
 
+            <div className='text-[12px]'>
                 <div className='md:grid md:grid-cols-2 gap-4 justify-between items-center'>
                     <div className='py-5 w-[80%] font-bold text-[25px] sm:text-[40px] md:w-[80%] xl:text-[55px] xl:font-bold'>
                         <h1>Свяжитесь с нами в любое время</h1>
                     </div>
-
-                    <p className='text-[18px] sm:text-[18px] xl:text-[22px] xl:pl-[110px]'>Мы здесь, чтобы помочь. Независимо от того, есть ли у вас вопросы или вам нужна помощь, наша команда готова оказать поддержку и обеспечить гладкое взаимодействие.</p>
+                    <p className='text-[18px] sm:text-[18px] xl:text-[22px] xl:pl-[110px]'>
+                        Мы здесь, чтобы помочь...
+                    </p>
                 </div>
             </div>
+
             <div className="pt-5 gap-10 pb-10">
                 <div className="w-full mx-auto bg-gray-50 p-4 rounded-lg shadow grid lg:grid-cols-2 gap-8 items-start">
+                    {/* Forma */}
                     <div>
-                        <h2 className="text-3xl font-bold mb-6">Связаться</h2>
-                        <form className="space-y-6 h-full">
+                        <h2 className="text-3xl font-bold mb-6 text-[#0563AB]">Связаться</h2>
+                        <form className="space-y-6 h-full" onSubmit={handleSubmit}>
                             <input
+                                name="name"
                                 type="text"
                                 placeholder="Ваше имя"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent focus:outline-none focus:border-blue-700 transition-all duration-200"
                             />
                             <input
+                                name="country"
                                 type="text"
                                 placeholder="Страна"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent focus:outline-none focus:border-blue-700 transition-all duration-200"
                             />
                             <input
+                                name="city"
                                 type="text"
                                 placeholder="Город"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent focus:outline-none focus:border-blue-700 transition-all duration-200"
                             />
                             <input
+                                name="email"
                                 type="email"
                                 placeholder="E-mail"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent focus:outline-none focus:border-blue-700 transition-all duration-200"
                             />
                             <input
+                                name="phone"
                                 type="text"
                                 placeholder="Ваш телефон"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent focus:outline-none focus:border-blue-700 transition-all duration-200"
                             />
                             <textarea
+                                name="idea"
                                 placeholder="Давайте поговорим о вашей идее"
-                                className="w-full bg-transparent border-b border-gray-300 py-2 focus:outline-none focus:border-blue-600 resize-none"
+                                className="w-full border-b border-[#0563AB] py-2 bg-transparent resize-none focus:outline-none focus:border-blue-700 transition-all duration-200"
                             ></textarea>
 
                             <button
                                 type="submit"
+                                disabled={loading}
                                 className="w-full bg-[#0563AB] hover:bg-blue-800 text-white font-semibold py-3 rounded-full transition"
                             >
-                                Рассчитать
+                                {loading ? "Отправка..." : "Рассчитать"}
                             </button>
                         </form>
                     </div>
 
+                    {/* Google Maps */}
                     <div className="h-full">
                         <iframe
                             title="Bizning manzil"
@@ -66,18 +113,12 @@ const Contactt = () => {
                             style={{ border: 0 }}
                             allowFullScreen=""
                             loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
+    );
+};
 
-    )
-}
-
-export default Contactt
+export default Contactt;

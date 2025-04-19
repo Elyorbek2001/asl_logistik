@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <header className="header relative flex justify-between items-center  sm:px-8 px-5 py-3">
             <img
-                className='w-[120px] h-[50px] sm:w-[220px] sm:h-[80px] '
+                className='w-[120px] h-[50px] sm:w-[170px] sm:h-[60px] '
                 src={logo}
                 alt="Logo"
             />
