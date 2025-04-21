@@ -58,7 +58,7 @@ const Main = () => {
 
                 <div className="form w-full pt-5 pb-10 xs:pt-3 xs:pb-3 sm:pt-3 sm:pb-5 lg:pt-5 lg:pb-10">
                     <h1 className='text-3xl max-w-full whitespace-nowrap text-[18px] xs:w-[80px] xs:h-auto leading-[1.2] sm:text-[15px] md:text-[20px] lg:h-auto lg:text-[25px] xl:h-auto xl:text-[30px] xl:pt-[20px] text-center lg:text-left'>
-                        Calculate your shipment
+                        Рассчитайте стоимость доставки
                     </h1>
                     <form id='myForm' onSubmit={SendMessage} className="grid grid-cols-1  pt-1 gap-2 sm:pt-4 sm:gap-3 md:grid-cols-2 md:gap-4 xl:pt-10 xl:grid-cols-2 xl:gap-4">
                         {/* From Field */}
@@ -69,7 +69,7 @@ const Main = () => {
                                 name="from"
                                 type="text"
                                 className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
-                                placeholder="Enter origin"
+                                placeholder="Введите происхождение"
                             />
                         </div>
 
@@ -81,7 +81,7 @@ const Main = () => {
                                 name="to"
                                 type="text"
                                 className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
-                                placeholder="Destination"
+                                placeholder="Место назначения"
                             />
                         </div>
 
@@ -93,7 +93,7 @@ const Main = () => {
                                 name="cargo"
                                 type="text"
                                 className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-full lg:w-full xl:w-full lg:text-[15px] xl:text-[18px]"
-                                placeholder="kg, volume"
+                                placeholder="кг, объем"
                             />
                         </div>
 
@@ -105,7 +105,7 @@ const Main = () => {
                                 name="name"
                                 type="text"
                                 className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[320px] lg:text-[15px] xl:text-[18px]"
-                                placeholder="Enter your name"
+                                placeholder="Введите свое имя"
                             />
                         </div>
 
@@ -117,7 +117,7 @@ const Main = () => {
                                 name="phone"
                                 type="text"
                                 className="mt-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 xs:py-2 xs:text-[14px] xs:rounded-[8px] xs:px-2 xs:w-full sm:w-full md:w-[160px] lg:w-[230px] xl:w-[315px] lg:text-[15px] xl:text-[18px]"
-                                placeholder="Enter your phone"
+                                placeholder="Введите свой телефон"
                             />
                         </div>
 
@@ -127,7 +127,7 @@ const Main = () => {
                                 className='w-full bg-[#0563AB] py-2 text-white rounded-xl text-[16px] hover:bg-blue-700 transition'
                                 disabled={loading}
                             >
-                                {loading ? "Sending..." : "Calculate"}
+                                {loading ? "Отправка..." : "Рассчитать"}
                             </button>
                         </div>
                     </form>
